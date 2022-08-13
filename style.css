@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
+.player {
+  padding-bottom: 6px;
+  border: 2px solid transparent;
+}
+
+.active {
+  border-bottom: 6px solid red;
+}
+
+.board {
+  background: #eaeaea;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 600px;
+  width: 600px;
+  grid-gap: 2px;
+  border: 2px solid #808080;
+  margin: 32px 0;
+}
+
+.cell {
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 160px;
+  padding: 20px 0 0 20px;
+  color: slategray;
+  transition: all ease 500ms;
+}
+
+.cell:hover {
+  background-color: #eaeaea;
+  transition: background-color linear 300ms;
+}
