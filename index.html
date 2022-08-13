@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <title>tic tac toe</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+
+  <body>
+    <!-- 2 players -->
+    <div class="players">
+      <p class="player js-player-1">Player 1</p>
+
+      <!-- restart button -->
+      <button disabled class="restart">Restart</button>
+
+      <p class="player js-player-2">Player 2</p>
+    </div>
+
+    <!-- game board with 9 cells-->
+    <div id="board" class="board">
+      <div class="cell" id="cell-0"></div>
+      <div class="cell" id="cell-1"></div>
+      <div class="cell" id="cell-2"></div>
+      <div class="cell" id="cell-3"></div>
+      <div class="cell" id="cell-4"></div>
+      <div class="cell" id="cell-5"></div>
+      <div class="cell" id="cell-6"></div>
+      <div class="cell" id="cell-7"></div>
+      <div class="cell" id="cell-8"></div>
+    </div>
+
+    <!-- end message will display the winner or draw -->
+    <div class="js-end-message"></div>
+
+    <!-- scripts are loaded -->
+    <script src="app.js"></script>
+  </body>
+</html>
